@@ -49,18 +49,19 @@ Public key cryptography can seem complex for the uninitiated; fortunately a writ
 
 Imagine a trunk with a lock that two people, Bob and Alice, use to ship documents back and forth. A typical lock has only two states: locked and unlocked. Anyone with a copy of the key can unlock the trunk if it's locked, and vice versa. When Bob locks the trunk and sends it to Alice, he knows that Alice can use her copy of the key to unlock the trunk. This is essentially how what's known as symmetric cryptography works: one secret key is used for both encrypting and decrypting, and both sides of a conversation use the same key.
 
-Now imagine, instead, that Bob makes a trunk with a special kind of lock. This lock has three states instead of two:
+Now imagine, instead, that Bob makes a trunk with a special kind of lock. This lock has three states instead of two:  
 
-  A. Locked, key turned all the way to the left
-  B. Unlocked, in the middle.
-  C. Locked, key turned all the way to the right.
+  A. Locked, key turned all the way to the left  
+  B. Unlocked, in the middle.  
+  C. Locked, key turned all the way to the right.  
 
   ![Public Key Cryptography](./images/public_key_criptography_1.png)
 
-Instead of one key, two keys go with this lock:
+Instead of one key, two keys go with this lock:  
 
-  Key No. 1 can only turn to the left
-  Key No. 2 can only turn to the right
+  Key No. 1 can only turn to the left  
+  Key No. 2 can only turn to the right  
+
 This means that if the trunk is locked and the key is turned to position A, only key No. 2 can unlock it by turning right, to position B (unlocked). If the trunk is locked in position C, only key No. 1 can unlock it by turning the lock left, to position B.
 
 In other words, either key can lock the trunk – but once it is locked, only the other key can unlock it.
