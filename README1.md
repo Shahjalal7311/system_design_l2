@@ -75,8 +75,12 @@ Now let's say Bob makes a few dozen copies of key No. 2, the key that only turns
 
 
 
-Reff: https://www.cloudflare.com/en-gb/learning/ssl/how-does-public-key-encryption-work/
-https://www.hp.com/us-en/shop/tech-takes/what-are-different-types-of-encryption#:~:text=The%20three%20major%20encryption%20types,that%20consumers%20use%20every%20day.
-https://www.cloudflare.com/en-gb/learning/ssl/what-is-encryption/
-https://tiptopsecurity.com/how-does-https-work-rsa-encryption-explained/#!prettyPhoto
+Reff: https://www.cloudflare.com/en-gb/learning/ssl/how-does-public-key-encryption-work/  
+
+https://www.hp.com/us-en/shop/tech-takes/what-are-different-types-of-encryption#:~:text=The%20three%20major%20encryption%20types,that%20consumers%20use%20every%20day.  
+
+https://www.cloudflare.com/en-gb/learning/ssl/what-is-encryption/  
+
+https://tiptopsecurity.com/how-does-https-work-rsa-encryption-explained/#!prettyPhoto  
+
 https://www.cloudflare.com/en-gb/learning/ssl/what-is-https/
