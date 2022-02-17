@@ -8,8 +8,10 @@ Now a days there 50% web application used https over internet.The number are gro
 HTTPS uses an encryption protocol to encrypt the communications. The protocol is called Transport Layer Security (TLS), although formerly it was known as Secure Sockets Layer (SSL).
 This protocol secures communications by using an asymmetric public key infrastructure.This type of security system uses two different keys to encrypt communications between two parties i means end to end encrypt.
 
-  1. Private key
+  1. Private key: 
   2. Public key
+
+
 
 How ever, HTTPS keeps our stuff secret by encrypting it as it moves between our browser and the website’s server. This ensures that anyone listening in on the conversation can’t read anything. This could include our ISP, a hacker, snooping governments, or anyone else who manages to position themselves between me or your and the web server.
 
@@ -33,10 +35,43 @@ Symmetric encryption: Symmetric encryption is the simplest and best-known encryp
 
   ![symmetric encryption](./images/symmetric_encryption.png)
 
+Example:   
+AES 256-bit session key (expressed in hexadecimal)  
+C8D5897DCC56D6D462B8F32D464303161ACE11E536F04AE1  
+
 Asymmetric encryption: it's type of encryption is relatively new as compared to symmetric encryption.It's known as key based encryption.On other words, Asymmetric means we’re using two different keys, one to encrypt and one to decrypt.
 We also call this Public Key Cryptography because it’s how we establish secure connections on the public internet.
 
-  ![Asymmetric encryption](./images/asymmetric_encryption.png)
+  ![Asymmetric encryption](./images/asymmetric_encryption.png) 
+
+Example: 
+RSA 2048-bit private key (expressed in base64)  
+MIIEogIBAAKCAQBl1esMuCZXUjwiBaUJsZlHrcGJ988fblnhcTjtpnaovHYp7IZW
+0EMIkKMuF6tILPuJBMd2FoFHC2ZUVcmGrFabK/zRzrEb74djiH4l1gQHZDsQYybv
+Qm6bJEsT5Cy+lwRCvXznEnWmQu62HX09CThtXUPNwfGLcAEFQLzgKPOcU4DZboY9
+Tlm/Repe9w6h0KEzB7MHFIt446RPh9FalQwfrjfxGNHb+8V9BVlpRetXxd6aj1oo
+WEsg5TqrZB8Cr17l/KXh+goqlyFmsz6WMpbv5oLbG+535PhyZjJ/VjiuTi6jsD9N
+Skgq+iEbx74ZE855Ba7iYlJma6vxAj3ILdyLAgMBAAECggEAB41BjQPq8/bJNsys
+XHerIkGkZJLX7UDFsY4v5o+9pO205Y8At1diYTQ4paZjsUqErLiKAhvRIm+Z+w8R
+jscg9QjiCr0FLUkqBRuOH0grrFCmgKSZsox+n0qltqfpGYkha8GZjZk02EuGYEL3
+kpsocBPGf2+udeSsbrNKTmU7C5CdOp+Fzmw4goltgmS3Sn8FWBaWOgblcUIFyupB
+ETAzxUiH2qQom3plosMb11NzVNw8LajyGNmphB5szRHx+6Y6fGuhEacIePez8LJE
+zRUdcjomzNNsft1iAduc0cZSRfPCMMmP989l+tWck2d/i9QWtuRoDhxsXyAaCieZ
+dDnAIQKBgQDGrxF1WRum9N+D4D2MRTntseiNyZAKzgcPmXqyWoyPFDKsiTsk/Qe2
+/KIQjJf11JcpZ+12UNNRFjghiFyl3Bh1E+pT6kzTPUZ5Ewws0hjm5CL667RkWCtn
+4N4BoWPLmM5KFXMvmoK3iNyMLI+LZmI3HQ2wLcpC2+I1cpVmyQHoZQKBgQCDNotl
+s2tuzNOKUsgrYl3SGk3MgOHe147h/Q32/x+dahIihVz6N3/nCiVpmliySGuLlxOu
+OsWJby7XNuana7AVt59pE7G87pHtNFpLvhmN8oBDgvzbH2pLta/fQM9yjDokyk0I
+4jhn2cMDE6qpx1yLnR8Hogb393GXqmAB/RtKLwKBgCF1yE3n9NU4NhBCinr+CZRz
+OsPuJxj6u4uwAE7bGwLZlvMhpVlEV7FEeJKq6siWxeJOQ1qCoCPuxwM2sMup9mB5
+OyRouAl3L1AimhFOTK1NzGpPmbCwfJbg8uJ5aJIYKN2nIR/qOItqPCJLOt1yH6ZC
+eVSrUX3TBBSWOHz36x9VAoGAPyB8zD8XzsTIeWH+X7EBhlWVXHAdOwLmAR+oGk7/
+vNINS4JyCwesh1FAUqApUAy7gPr8QvSPmOFe3bfSHHYYzzn6fak197mnh0GKt6oL
+zVkAEHryf9GLaEVPCc+6flesmYqiqUV88am4wsAxeWEqyxialyeCxsXLZrZXXl2R
+RY0CgYEAioZF15++gWnRzVKL/xFMj6Si53hekXHMrAsyYkxDB7Drjz3Qg9QN7fG1
+gzBXLeRPa0tnkfcWgeXIdbHNZywfqrhaUO+k4t5Ei5n8ZXDKeqtNAGSrVdG282/a
+OXL64xujKmZG27kZjK43bRe27obUHXbV7X0unT98QyYyWmkXdKk=
+
 
 # How Public Key Cryptography Works?
 Public Key Infrastructure (PKI), both types of encryption are used. Asymmetric (public key) encryption is used first to establish the connection, which is then replaced with symmetric encryption (called the session) for the duration.
