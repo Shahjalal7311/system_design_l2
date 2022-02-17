@@ -41,5 +41,42 @@ We also call this Public Key Cryptography because it’s how we establish secure
 # How Public Key Cryptography Works?
 Public Key Infrastructure (PKI), both types of encryption are used. Asymmetric (public key) encryption is used first to establish the connection, which is then replaced with symmetric encryption (called the session) for the duration.
 
-  ![Public Key Cryptography](./images/public_key_criptography.png)
+![Public Key Cryptography](./images/public_key_criptography.png)
 
+Here’s how Public Key Cryptography works in detail:
+
+Public key cryptography can seem complex for the uninitiated; fortunately a writer named Panayotis Vryonis came up with an analogy that roughly goes as follows.
+
+Imagine a trunk with a lock that two people, Bob and Alice, use to ship documents back and forth. A typical lock has only two states: locked and unlocked. Anyone with a copy of the key can unlock the trunk if it's locked, and vice versa. When Bob locks the trunk and sends it to Alice, he knows that Alice can use her copy of the key to unlock the trunk. This is essentially how what's known as symmetric cryptography works: one secret key is used for both encrypting and decrypting, and both sides of a conversation use the same key.
+
+Now imagine, instead, that Bob makes a trunk with a special kind of lock. This lock has three states instead of two:
+
+  A. Locked, key turned all the way to the left
+  B. Unlocked, in the middle.
+  C. Locked, key turned all the way to the right.
+
+  ![Public Key Cryptography](./images/public_key_criptography_1.png)
+
+Instead of one key, two keys go with this lock:
+
+  Key No. 1 can only turn to the left
+  Key No. 2 can only turn to the right
+This means that if the trunk is locked and the key is turned to position A, only key No. 2 can unlock it by turning right, to position B (unlocked). If the trunk is locked in position C, only key No. 1 can unlock it by turning the lock left, to position B.
+
+In other words, either key can lock the trunk – but once it is locked, only the other key can unlock it.
+
+Now let's say Bob makes a few dozen copies of key No. 2, the key that only turns right, and shares them with everyone he knows and anyone who wants a copy, making it his public key. He keeps key No. 1 for himself – it's his private key. What does this accomplish?
+
+  1. Alice can send Bob confidential data via the trunk and be confident that only Bob can unlock it. Once Alice has locked the trunk with the public key, which turns from left to right, only a key that can turn right to left can unlock it. That means only Bob's private key can unlock it.
+
+  2. Alice can be sure that the trunk is actually from Bob, and not an impersonator, if it's locked with his private key. There's only one key that can lock the trunk so that the lock is in position A, or turned all the way to the left: Bob's private key. True, anyone can unlock it with the public key by turning the key to the right, but it's guaranteed that the trunk is from Bob.
+
+
+
+
+
+Reff: https://www.cloudflare.com/en-gb/learning/ssl/how-does-public-key-encryption-work/
+https://www.hp.com/us-en/shop/tech-takes/what-are-different-types-of-encryption#:~:text=The%20three%20major%20encryption%20types,that%20consumers%20use%20every%20day.
+https://www.cloudflare.com/en-gb/learning/ssl/what-is-encryption/
+https://tiptopsecurity.com/how-does-https-work-rsa-encryption-explained/#!prettyPhoto
+https://www.cloudflare.com/en-gb/learning/ssl/what-is-https/
